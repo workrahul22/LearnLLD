@@ -5,18 +5,20 @@ public class Main {
         System.out.println("Working Perfectly");
     }
 }
+// abc@ABC@123
 
-// core squad sync up - Done
-// Dabase backup call - Done
-// setup device with arsal for IAP sandbox testing - Done
-
+// update user login given by giffa
+// check apple transaction with order id and check why the coin is not transferred
+// fix issue with facebook login
+// check how we can recover all the affected user account
+// complete LLD 3
+// complete LLD 4
 
 // Check Amit IAP pr commant and update the code -
 // Deploy IAP subscrption in UAT environment -
 // Do Testing for IoS coin package and buy operation -
 // complete OD-3647 -
 // complete OD-3657 -
-// complete scaler LLD all lectures -
 // otp table index on email and is_verified -
 
 
