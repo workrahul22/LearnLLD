@@ -1,4 +1,4 @@
-package LLD3Assignment;
+package LLD3AssignmentPart2;
 
 // Different employees in our company
 // you know their salary
@@ -25,9 +25,11 @@ public class main {
         Employee partTimeEmployee = new PartTimeEmployee("Shittu", 100000);
         Employee intern = new Interns("Pittu", 100000);
 
-        double fullTimeEmployeeTax = taxcalculator.calculateTax(fullTimeEmployee);
-        double partTimeEmployeeTax = taxcalculator.calculateTax(partTimeEmployee);
-        double internTax = taxcalculator.calculateTax(intern);
+        TaxCalculatorFactory taxCalculatorFactory = new TaxCalculatorFactory();
+
+        double fullTimeEmployeeTax = taxCalculatorFactory.getTaxCalculator(fullTimeEmployee).calculateTax(fullTimeEmployee);
+        double partTimeEmployeeTax = taxCalculatorFactory.getTaxCalculator(partTimeEmployee).calculateTax(partTimeEmployee);
+        double internTax = taxCalculatorFactory.getTaxCalculator(intern).calculateTax(intern);
 
         System.out.println("Full time employee tax => " + fullTimeEmployeeTax);
         System.out.println("Part time employee tax => " + partTimeEmployeeTax);
